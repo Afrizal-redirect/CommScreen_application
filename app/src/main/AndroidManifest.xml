@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pkd.commscreen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.CAPTURE_AUDIO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".peng_tambah_gambar_user"
+            android:label="Tambah Gambar"
+            android:parentActivityName=".pengaturan">
+
+        </activity>
+        <activity
+            android:name=".tampilData.perasaan"
+            android:label="Perasaan"
+            android:parentActivityName=".Home"
+            tools:ignore="Instantiatable">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity android:name=".Home" />
+        <activity android:name=".ketik"
+            android:label="Teks Jadi Suara"
+            android:parentActivityName=".Home">
+
+        </activity>
+        <activity
+            android:name=".peng_faq"
+            android:label="FAQ"
+            android:parentActivityName=".peng_tentang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".peng_tentang" />
+        </activity>
+        <activity
+            android:name=".peng_syarat"
+            android:label="Syarat dan Ketentuan"
+            android:parentActivityName=".peng_tentang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".peng_tentang" />
+        </activity>
+        <activity
+            android:name=".peng_term"
+            android:label="Term of Use"
+            android:parentActivityName=".peng_tentang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".peng_tentang" />
+        </activity>
+        <activity
+            android:name=".peng_kebijakan"
+            android:label="Kebijakan Privasi"
+            android:parentActivityName=".peng_tentang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".peng_tentang" />
+        </activity>
+        <activity
+            android:name=".peng_pembaruan"
+            android:label="Pembaruan"
+            android:parentActivityName=".pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pengaturan" />
+        </activity>
+        <activity
+            android:name=".peng_kritsar"
+            android:label="Kritik Saran"
+            android:parentActivityName=".pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pengaturan" />
+        </activity>
+        <activity
+            android:name=".peng_hub_kami"
+            android:label="Hubungi kami"
+            android:parentActivityName=".pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pengaturan" />
+        </activity>
+        <activity
+            android:name=".peng_tambah_gambar"
+            android:label="Tambah Gambar"
+            android:parentActivityName=".pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pengaturan" />
+        </activity>
+        <activity
+            android:name=".peng_hapus_histori"
+            android:label="Hapus Histori"
+            android:parentActivityName=".pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pengaturan" />
+        </activity>
+        <activity
+            android:name=".peng_tentang"
+            android:label="Tentang Kami"
+            android:parentActivityName=".pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pengaturan" />
+        </activity>
+        <activity
+            android:name=".peng_tampilan"
+            android:label="Tampilan"
+            android:parentActivityName=".pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pengaturan" />
+        </activity>
+        <activity
+            android:name=".pengaturan"
+            android:label="Pengaturan"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".histori"
+            android:label="Riwayat"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".wellcome"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".splash_screen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

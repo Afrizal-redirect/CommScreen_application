@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "488322763710",
+    "project_id": "comm-screen",
+    "storage_bucket": "comm-screen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488322763710:android:5bfdda9d1185fc68cf87ef",
+        "android_client_info": {
+          "package_name": "com.pkd.commscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488322763710-ednj341lo7k6hhkiga41ct04tmdpgb19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pkd.commscreen",
+            "certificate_hash": "a5616e6fdd361ca7f1c6a8b0e6d07e407ef01789"
+          }
+        },
+        {
+          "client_id": "488322763710-4ea0bamvecfv070bbabikpojjsuj5urh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPFSO6cm80WonyLKjECWb3kzkison49WY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488322763710-4ea0bamvecfv070bbabikpojjsuj5urh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context=".frag.susunKata">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity=""
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/okesong"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/play_kata"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="28dp"
+                android:background="#F2FAFF"
+                android:src="@drawable/ic_baseline_play_circle_outline_24"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="245dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/datasusunkata"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal" />
+
+                <ListView
+                    android:id="@+id/data"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal" />
+
+            </LinearLayout>
+        </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/hapussemuakata"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#F2FAFF"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_baseline_delete_forever_24"/>
+
+                <com.example.jean.jcplayer.view.JcPlayerView
+                    android:id="@+id/jcplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

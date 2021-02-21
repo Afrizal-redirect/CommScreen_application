@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Comm Screen</string>
+    <string name="textwelcome">Comm-Screen adalah suatu aplikasi komunikasi  alternatif dan augmentatif untuk membantu meningkatkan kualitas komunikasi klien.</string>
+    <string name="textsetuju">Dengan menggunakan aplikasi ini anda setuju dengan Kebijakan Privasi Comm-Screen</string>
+    <string name="setuju_lanjut"><![CDATA[Setuju & Lanjut]]></string>
+    <string name="copy">COPYRIGHT2021</string>
+    <string name="login">LOGIN</string>
+    <string name="tuliskan_kata_disini">Tuliskan kata disini</string>
+    <string name="mulai">Mulai</string>
+    <string name="failed">Sorry! Text To Speech failed...</string>
+    <string name="judul_gambar">Masukkan Judul Gambar</string>
+    <string name="judul">Judul Gambar</string>
+    <string name="pilih_gambar">Pilih Gambar</string>
+    <string name="rekam_suara">Rekam Suara</string>
+    <string name="rekam">Rekam</string>
+    <string name="saya">nama</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="keterangan">
+        Keterangan ini berguna buat para pengguna,
+        jadi harus ditampilkan agar dapat dibaca oleh semua pengunjung.
+        Keterangan ini menjadi referensi yang dapat dicoba di rumah,
+        Terima kasih telah membaca referensi ini dalam tempo yang sesingkat-singkatnya
+    </string>
+    <string name="isi_kebijakan_privasi">Saat Anda menggunakan aplikasi kami, Anda mempercayai kami dengan informasi Anda. Kebijakan Privasi ini dimaksudkan untuk membantu Anda memahami data apa yang kami kumpulkan dan mengapa kami memerlukannya. Ini penting; Kami harap Anda meluangkan waktu untuk membacanya dengan saksama. Kami akan menjelaskannya dengan sesederhana mungkin.</string>
+    <string name="mengumpulkanAlamatEmail">Aplikasi Comm-Screen ini menggunakan Firebase Authentication untuk "Sign In", jadi secara tidak langsung alamat Gmail Anda akan disimpan ke dashboard Firebase kami dan database Cloud kami saat Anda menggunakan fitur tersebut. Anda harus tahu, Firebase adalah salah satu produk Google, dan Google tidak akan mengizinkan kami untuk mengetahui kata sandi (password) Anda dengan cara apa pun, jadi tidak mungkin kami mengumpulkan kata sandi Gmail Anda, kami hanya mengumpulkan alamat Gmail saja untuk mempermudah identifikasi Bookmark milik Anda. Jadi Anda tidak perlu khawatir kehilangan akun Gmail Anda, dan juga kami tidak akan membagikan alamat Gmail Anda kepada siapa pun untuk tujuan apa pun.</string>
+    <string name="txt_keamanan">Kami telah menerapkan pengamanan administratif dan teknis yang diyakini cukup untuk melindungi kerahasiaan alamat Gmail Anda, dan kami menggunakan Server Pribadi di Cloud kami (bukan Server Bersama).</string>
+    <string name="akses">Dengan mengakses dan menggunakan aplikasi Comm-Screen serta mendaftar sebagai pengguna di Comm-Screen, berarti Anda telah memahami dan menyetujui untuk terikat dan tunduk dengan semua peraturan yang berlaku di Comm-Screen.</string>
+    <string name="definisi">- Definisi</string>
+    <string name="txtdeffis">Comm-Screen  adalah aplikasi KAA (komunikasi Augmentatif dan Alternatif) yang dirancang untuk membantu klien dengan kesulitan dalam berkomunikasi baik verbal maupun non-verbal. Aplikasi ini juga dapat menjadi metode dan media terapi bagi terapis wicara di Indonesia.</string>
+    <string name="apkcom">Aplikasi Comm-Screen merupakan aplikasi perangkat lunak(software application) milik Tim Kreaspeech Media yang dapat diakses di smartphone dan tablet yang berbasis Android.</string>
+    <string name="daftar">Untuk registrasi Anda harus mengisi semua kelengkapan biodata tanpa terkecuali dan menyertakan identitas asli Anda.</string>
+    <string name="asdad">a)	Anda harus mencantumkan nama lengkap (bukan nama alias).</string>
+    <string name="qemu">b)	Anda harus mencantumkan email yang aktif untuk mengaktifasi akun</string>
+</resources>

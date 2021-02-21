@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".peng_kebijakan">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/isi_kebijakan_privasi"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="Mengumpulkan Alamat Gmail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/mengumpulkanAlamatEmail"/>
+
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="Informasi Keamanan Pengguna"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/txt_keamanan"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        tools:ignore="RtlCompat"
+        android:layout_gravity="center"
+        android:text="Terakhir direvisi pada 27 Januari 2021."/>
+
+</LinearLayout>

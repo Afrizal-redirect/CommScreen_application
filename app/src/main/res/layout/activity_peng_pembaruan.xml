@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    tools:context=".peng_pembaruan">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_regular"
+        android:text="Upss..."/>
+    <TextView
+        android:id="@+id/txtpembaruan"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:textColor="#3486b8"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="15dp"
+        android:text="Belum Ada Pembaruan"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/FirebaseUI.AuthMethodPicker.Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btn_pembaruan"
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_regular"
+        android:text=""
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

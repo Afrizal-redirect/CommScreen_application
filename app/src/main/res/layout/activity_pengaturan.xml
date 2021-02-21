@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#F2FAFF"
+    tools:context=".pengaturan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:text="email dan gambar"/>
+
+
+            <Button
+                android:id="@+id/tampilan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:onClick="tampilan"
+                android:textColor="#474443"
+                android:textAlignment="textStart"
+                android:background="@drawable/button_pengaturan"
+                android:fontFamily="@font/nunito_bold"
+                android:drawableRight="@drawable/ic_panah"
+                android:textSize="12dp"
+                android:text="Tampilan"/>
+
+
+            <Button
+                android:id="@+id/tentang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="#474443"
+                android:textAlignment="textStart"
+                android:onClick="tentangkami"
+                android:background="@drawable/button_pengaturan"
+                android:drawableRight="@drawable/ic_panah"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="12dp"
+                android:text="Tentang Kami"/>
+
+
+            <Button
+                android:id="@+id/hapushistori"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#474443"
+                android:padding="10dp"
+                android:onClick="hapushistori"
+                android:textAlignment="textStart"
+                android:background="@drawable/button_pengaturan"
+                android:drawableRight="@drawable/ic_baseline_restore_from_trash_24"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="12dp"
+                android:text="Hapus Histori"/>
+
+
+            <Button
+                android:id="@+id/tambahgambar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="#474443"
+                android:onClick="tambahgambar"
+                android:textAlignment="textStart"
+                android:background="@drawable/button_pengaturan"
+                android:drawableRight="@drawable/add"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="12dp"
+                android:text="Tambah Gambar"/>
+
+
+            <Button
+                android:id="@+id/hubkami"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:onClick="hubkami"
+                android:textColor="#474443"
+                android:textAlignment="textStart"
+                android:background="@drawable/button_pengaturan"
+                android:drawableRight="@drawable/ic_email"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="12dp"
+                android:text="Hubungi Kami"/>
+
+
+            <Button
+                android:id="@+id/kritsar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#474443"
+                android:padding="10dp"
+                android:onClick="kritsar"
+                android:textAlignment="textStart"
+                android:background="@drawable/button_pengaturan"
+                android:drawableRight="@drawable/kritsar"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="12dp"
+                android:text="Kritik dan Saran"/>
+
+
+            <Button
+                android:id="@+id/pembaruan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="#474443"
+                android:onClick="pembaruan"
+                android:textAlignment="textStart"
+                android:background="@drawable/button_pengaturan"
+                android:drawableRight="@drawable/ic_update"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="12dp"
+                android:text="Lihat Pembaruan"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_marginTop="90dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:onClick="logout"
+                android:background="@drawable/button_pengaturan"
+                android:textColor="#E62129"
+                android:text="Logout"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        tools:ignore="RtlCompat"
+        android:textColor="#A1A1A1"
+        android:text="@string/copy"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kategori">
+        <item>Pilih Kategori</item>
+        <item>Mandi</item>
+        <item>Makan</item>
+        <item>Sekolah</item>
+        <item>Anggota Tubuh</item>
+        <item>Buah</item>
+        <item>Mainan</item>
+        <item>Minuman</item>
+        <item>Perasaan</item>
+        <item>Pronomina</item>
+        <item>Sayuran</item>
+        <item>Transportasi</item>
+        <item>Aktivitas</item>
+        <item>Angka</item>
+        <item>Hewan</item>
+        <item>Makanan</item>
+        <item>Pakaian</item>
+        <item>Preposisi</item>
+        <item>Rekaman</item>
+        <item>Sifat</item>
+        <item>Warna</item>
+    </string-array>
+</resources>

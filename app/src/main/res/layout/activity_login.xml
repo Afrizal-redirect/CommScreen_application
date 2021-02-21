@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3486b8"
+    tools:context=".login">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/FirebaseUI.AuthMethodPicker.Logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:id="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="@string/login"
+                android:fontFamily="@font/nunito_bold"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="16dp"
+                    android:text="Email        :"/>
+                <EditText
+                    android:id="@+id/usernameKey"
+                    android:layout_width="match_parent"
+                    style="@style/EditTextHint"
+                    android:layout_height="50dp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/nunito_regular"
+                    android:hint="Email Anda"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="16dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Password :"/>
+                <EditText
+                    android:id="@+id/passwordKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/nunito_regular"
+                    style="@style/EditTextHint"
+                    android:hint="Password Anda"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/log"
+                    android:layout_width="150dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttongoogle"
+                    android:fontFamily="@font/nunito_regular"
+                    android:layout_height="wrap_content"
+                    android:text="keluar"/>
+                <Button
+                    android:id="@+id/loginoke"
+                    android:layout_width="150dp"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="30dp"
+
+                    android:fontFamily="@font/nunito_regular"
+                    android:layout_height="wrap_content"
+                    android:text="Login"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_italic"
+                android:textColor="#FFFFFF"
+                android:text="atau, Login dengan"/>
+
+
+            <Button
+                android:id="@+id/logingoogle"
+                android:background="#4480ff"
+                android:layout_width="200dp"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:fontFamily="@font/nunito_regular"
+                android:layout_height="40dp"
+                android:text="Google"/>
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

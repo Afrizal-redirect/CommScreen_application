@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FAFF"
+    android:padding="5dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#F2FAFF"
+        android:fontFamily="@font/nunito_regular"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:id="@+id/susunkata"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#ffffff"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical" />
+
+                <ScrollView
+                    android:layout_width="270dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtsusun"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""/>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/hapussemuakata"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#ffffff" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="589dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/data_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:layout_margin="2dp"
+                                        android:background="#FFFFFF"
+                                        android:layout_gravity="center"
+                                        android:onClick="_verba"
+                                        android:src="@drawable/coververba" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Verba"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/perasaan"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:layout_margin="2dp"
+                                        android:onClick="_perasaan"
+                                        android:background="#FFFFFF"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/coverperasaan" />
+
+                                    <TextView
+                                        android:id="@+id/txtperasaan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Perasaan"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/keluarga"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:layout_margin="2dp"
+                                        android:onClick="_keluarga"
+                                        android:background="#ffffff"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/kel" />
+
+                                    <TextView
+                                        android:id="@+id/txtkeluarga"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Keluarga"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/pakaian"
+                                        android:layout_width="75dp"
+                                        android:onClick="_pakaian"
+                                        android:layout_height="75dp"
+                                        android:background="#ffffff"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/pakaian" />
+
+                                    <TextView
+                                        android:id="@+id/txtpakaian"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Pakaian"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/makanan"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:background="#ffffff"
+                                        android:onClick="_makanan"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/makanan" />
+
+                                    <TextView
+                                        android:id="@+id/txtmakanan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Makanan"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/minuman"
+                                        android:layout_width="70dp"
+                                        android:layout_height="75dp"
+                                        android:onClick="_minum"
+                                        android:layout_gravity="center"
+                                        android:background="#ffffff"
+                                        android:src="@drawable/minuman" />
+
+                                    <TextView
+                                        android:id="@+id/txtminuman"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Minuman"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/Tubuh"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:background="#ffffff"
+                                        android:onClick="_tubuh"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/tubuh" />
+
+                                    <TextView
+                                        android:id="@+id/txttubuh"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Tubuh"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/warna"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:background="#ffffff"
+                                        android:onClick="_warna"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/warna" />
+
+                                    <TextView
+                                        android:id="@+id/txtwarna"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Warna"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/angka"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:layout_gravity="center"
+                                        android:onClick="_angka"
+                                        android:background="#ffffff"
+                                        android:src="@drawable/angka" />
+
+                                    <TextView
+                                        android:id="@+id/txtangka"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Angka"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/alatmakan"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:onClick="_alatmakan"
+                                        android:layout_gravity="center"
+                                        android:background="#ffffff"
+                                        android:src="@drawable/alatmakan" />
+
+                                    <TextView
+                                        android:id="@+id/txtalatmakan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Alat Makan"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/alatmandi"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:onClick="_alatmandi"
+                                        android:layout_gravity="center"
+                                        android:background="#ffffff"
+                                        android:src="@drawable/alatmandi" />
+
+                                    <TextView
+                                        android:id="@+id/txtalatmandi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Alat Mandi"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/buah"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:onClick="_buah"
+                                        android:background="#ffffff"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/buah" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuah"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Buah"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/hewan"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:onClick="_hewan"
+                                        android:layout_gravity="center"
+                                        android:background="#ffffff"
+                                        android:src="@drawable/hewan" />
+
+                                    <TextView
+                                        android:id="@+id/txthewan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Hewan"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/transportasi"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:onClick="_transportasi"
+                                        android:background="#ffffff"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/transportasi" />
+
+                                    <TextView
+                                        android:id="@+id/txttransportasi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Transpostasi"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="75dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#FFFFFF"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/sayuran"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
+                                        android:onClick="_sayuran"
+                                        android:background="#ffffff"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/sayuran" />
+
+                                    <TextView
+                                        android:id="@+id/txtsayuran"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Sayuran"
+                                        android:textSize="13dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/data_sajak"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="vertical" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="75dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FFFFFF"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/ungkapan"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="#ffffff"
+                                android:onClick="_ungkapan"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ungkap" />
+
+                            <TextView
+                                android:id="@+id/txtungkapan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center"
+                                android:text="Ungkapan"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="75dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FFFFFF"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/user"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:background="#B8CFFF"
+                                android:onClick="_user"
+                                android:layout_gravity="center"
+                                android:src="@drawable/koleksi" />
+
+                            <TextView
+                                android:id="@+id/txtUser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Koleksiku"
+                                android:textSize="13dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

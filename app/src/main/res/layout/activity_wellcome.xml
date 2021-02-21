@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wellcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#3486b8"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="SELAMAT DATANG"/>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:textSize="14dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="@string/textwelcome"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/gembok"/>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="@string/textsetuju"/>
+        <Button
+            android:id="@+id/setuju"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:onClick="setuju"
+            android:background="#ffffff"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/setuju_lanjut"/>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="10dp"
+            android:fontFamily="@font/nunito_italic"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="@string/copy"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2FAFF"
+    tools:context=".tampilData.user">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/data_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+
+    <Button
+        android:id="@+id/tambahuser"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="#3486b8"
+        android:textColor="#ffffff"
+        android:textSize="11dp"
+        android:layout_gravity="end|bottom"
+        android:text="TAMBAH" />
+
+
+
+
+</FrameLayout>

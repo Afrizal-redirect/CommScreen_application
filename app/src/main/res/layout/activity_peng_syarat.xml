@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".peng_syarat">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/akses"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="@string/definisi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/txtdeffis"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="- Aplikasi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/apkcom"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="- Pendaftaran"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/daftar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/asdad"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/qemu"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="- Pengguna"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Pengguna adalah pihak yang menggunakan layanan aplikasi Comm-Screen, maka: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="a)	Anda bertanggung jawab untuk menjaga kerahasiaan akun dan password."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="b)	Anda setuju untuk bertanggung jawab atas semua yang terjadi mengenai perihal penggunaan akun pribadi dan password Anda."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="c)	Comm-Screen tidak akan bertanggung jawab atas kerugian atau kerusakan yang timbul dari kegagalan untuk mematuhi persyaratan-persyaratan ini."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="d)	Comm-Screen berhak untuk menolak layanan atau menghentikan akun."/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="- Jam Operasional"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Pengguna dapat menghubungi kami kapan saja dengan mengirimkan email pada kreaspeech@gmail.com. "/>
+
+                <Button
+                    android:id="@+id/kirim"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_email"/>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bbb"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3486b8"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="14dp"
+                android:text="Ketentuan Unggah Gambar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:lineSpacingExtra="5dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Anda setuju untuk tidak :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="a)	mengunggah, memasang (posting), mengirimkan atau menyediakan Konten yang melanggar hukum, berbahaya, mengancam, kasar, melecehkan, mengkhawatirkan, meresahkan, berliku-liku, memfitnah, vulgar, cabul, mencemarkan, invasif terhadap privasi pihak lain, penuh kebencian, atau mengandung unsur SARA atau lainnya;"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_italic"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="b)	mengunggah, memasang (posting), mengirimkan atau sebaliknya menyediakan Konten  yang menampilkan anak di bawah umur tanpa pengawasan atau menggunakan Layanan untuk merugikan anak di bawah umur dengan cara apapun."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                tools:ignore="RtlCompat"
+                android:layout_gravity="center"
+                android:text="Terakhir direvisi pada 27 Januari 2021."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

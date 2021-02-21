@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="#F2FAFF"
+    tools:context=".peng_tambah_gambar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/imageContainer"
+                    android:layout_width="120dp"
+                    android:background="@drawable/buttongoogle"
+                    android:layout_height="120dp"
+                    android:visibility="visible"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/judul"/>
+
+                    <EditText
+                        android:id="@+id/etnama"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/nunito_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/judul_gambar"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/select_image"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="#FFFFFF"
+                android:background="#3486b8"
+                android:text="@string/pilih_gambar"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Kategori Gambar"/>
+            <Spinner
+                android:id="@+id/kategori"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/rekam_suara"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_record"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_pengaturan"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="RECORD" />
+                <Button
+                    android:id="@+id/stoprecord"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_pengaturan"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="STOP RECORD" />
+
+                <Button
+                    android:id="@+id/btn_play"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_pengaturan"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="PLAYING" />
+                <Button
+                    android:id="@+id/stopplay"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_pengaturan"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="STOP PLAY" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mrecordlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3486b8"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="#FFFFFF"
+                android:text="Ambil Berkas"/>
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3486b8"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="#FFFFFF"
+                android:text="Simpan"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/FirebaseUI.AuthMethodPicker.Logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                tools:ignore="RtlCompat"
+                android:textColor="#A1A1A1"
+                android:text="@string/copy"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

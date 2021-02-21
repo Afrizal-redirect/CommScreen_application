@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="#F2FAFF"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:id="@+id/list_item"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/gambar_keluarga"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="top"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/etnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Nama"
+            android:textSize="12dp"
+            tools:ignore="RtlCompat" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
