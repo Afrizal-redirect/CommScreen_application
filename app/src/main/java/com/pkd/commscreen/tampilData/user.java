@@ -136,7 +136,7 @@ public class user extends Fragment {
 
         //Mendapatkan Referensi Database
         reference = FirebaseDatabase.getInstance().getReference();
-        reference.child("User").child(auth.getUid()).child("Kategori User")
+        reference.child("User/"+auth.getUid()).child("Kategori User")
                 .addValueEventListener(new ValueEventListener () {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
